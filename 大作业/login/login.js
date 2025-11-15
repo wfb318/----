@@ -22,6 +22,7 @@ loginBox.addEventListener('submit', function(e) {
     if (inputUsername === testUser.username && inputPassword === testUser.password) {
         errorTip.style.display = 'none'; /*隐藏错误提示*/
         alert('登录成功！即将跳转到首页');
+        window.location.href = '../inner/inner.html';
     } else {
         errorTip.style.display = 'block'; /*显示错误提示*/
     }

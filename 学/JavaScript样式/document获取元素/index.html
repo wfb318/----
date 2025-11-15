@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        hello
+    </div>
+    <div>world</div>
+    <p class="text">hello</p>
+    <form name="form"></form>
+    <div id="root">hhh</div>
+
+    <div class="nav">nav1</div>
+    <div class="nav">nav2</div>
+    <script>
+        //通过标签名获取
+        var div1=document.getElementsByTagName("div")[0];
+        console.log(div1);
+
+        div1.innerHTML="Hello";
+
+        //通过class获取
+        var p1=document.getElementsByClassName("text")[0];
+        console.log(p1);
+
+        p1.innerHTML="Hello"
+        
+        //通过name获取(使用率低)
+        var form1=document.getElementsByName("form")[0];
+        console.log(form1);
+        
+        //通过id获取
+
+        var id1=document.getElementById("root")[0];
+        console.log(id1);
+        
+        //通过选择器获取
+        var nav=document.querySelector(".nav");
+        console.log(nav);
+
+        var nav_all=document.querySelectorAll(".nav");
+        console.log(nav_all);
+        
+        
+
+    </script>
+</body>
+</html>

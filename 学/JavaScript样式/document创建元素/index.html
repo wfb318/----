@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="111">hhh</div>
+    <div id="container"></div>
+    <script>
+        var text = document.createElement('p');
+        console.log(text);
+
+        var content = document.createTextNode("wfb")
+        console.log(content);
+        
+        text.appendChild(content);
+        console.log(text);
+
+        var id = document.createAttribute('id');
+        console.log(id);
+        
+        id.value = "root";
+
+        text.setAttributeNode(id);
+        console.log(id);
+        
+        var body = document.getElementById("container");
+        container.appendChild(text);
+    </script>
+</body>
+</html>

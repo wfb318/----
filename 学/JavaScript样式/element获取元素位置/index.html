@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height:200px;
+            border:5px solid red;
+            padding:10px;
+            margin: 20px;
+            background-color:aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box"></div>
+    <script>
+        var box = document.getElementById("box");
+        //包括padding不包括margin，border
+        console.log(box.clientHeight);
+        console.log(box.clientWidth);
+        
+        //获取视口高度
+        console.log(document.documentElement.clientHeight);
+        
+        //获取页面高度
+        console.log(document.body.clientHeight);
+        
+        console.log("-------------------");
+        
+        //包括padding不包括margin，border和溢出不可见的部分
+        console.log(box.scrollHeight);
+        console.log(box.scrollWidth);
+        
+        //获取视口高度
+        console.log(document.documentElement.scrollHeight);
+        
+        //获取页面高度
+        console.log(document.body.scrollHeight);
+
+        console.log("-------------------");
+
+        //元素的CSS垂直(水平)高度，包括元素本身的高度、padding和border
+        console.log(box.offsetHeight);
+        console.log(box.offsetWidth);
+        
+        //获取视口高度
+        console.log(document.documentElement.offsetHeight);
+        
+        //获取页面高度
+        console.log(document.body.offsetHeight);
+
+    </script>
+</body>
+</html>

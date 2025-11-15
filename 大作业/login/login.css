@@ -7,7 +7,7 @@
 }
 
 body {
-    background-image: url("./背景图片/1.jpg");
+    background-image: url("../backgroundimg/1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -21,17 +21,17 @@ body {
 /*设置背景图片滚动*/
 @keyframes WFB{
     0%{
-        background-image: url("./背景图片/1.jpg");
+        background-image: url("../backgroundimg/1.jpg");
     }20%{
-        background-image: url("./背景图片/2.jpg");
+        background-image: url("../backgroundimg/2.jpg");
     }40%{
-        background-image: url("./背景图片/3.jpg");
+        background-image: url("../backgroundimg/3.jpg");
     }60%{
-        background-image: url("./背景图片/4.jpg");
+        background-image: url("../backgroundimg/4.jpg");
     }80%{
-        background-image: url("./背景图片/5.jpg");
+        background-image: url("../backgroundimg/5.jpg");
     }100%{
-        background-image: url("./背景图片/1.jpg");
+        background-image: url("../backgroundimg/1.jpg");
     }
 }
 /* 登录容器样式 */
