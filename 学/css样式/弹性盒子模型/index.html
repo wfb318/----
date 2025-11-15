@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction:row-reverse;/*column纵向*/
+            justify-content: center;/*flex-start,flex-end*/
+            align-items: center;
+        }
+        .container{
+            width:400px;
+            height:400px;
+            background-color: azure;
+            display: flex;
+            flex-direction:row-reverse;/*column纵向*/
+            justify-content: center;/*flex-start,flex-end*/
+            align-items: center;
+        }
+        .box1{
+            width:100px;
+            height:100px;
+            background-color: aqua;
+            flex:3;
+        }
+        .box2{
+            width:100px;
+            height:100px;
+            background-color: red;
+            flex:1;
+        }
+        .box3{
+            width:100px;
+            height:100px;
+            background-color: green;
+            flex:1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+</body>
+</html>

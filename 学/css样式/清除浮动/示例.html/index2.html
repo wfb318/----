@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <style>
+        .layout-box {
+            width: 900px;
+            margin: 20px auto;
+            /* overflow: hidden 触发BFC，自动包裹浮动子元素，清除高度塌陷 */
+            overflow: hidden; 
+            border: 1px solid #eee;
+        }
+        .left-col {
+            float: left;
+            width: 200px;
+            height: 300px;
+            background-color: #f5f5f5;
+            padding: 15px;
+        }
+        .middle-col {
+            /* 中间列不浮动，用margin避开左右浮动列 */
+            margin: 0 230px; 
+            height: 300px;
+            background-color: #fff;
+            padding: 15px;
+        }
+        .right-col {
+            float: right;
+            width: 200px;
+            height: 300px;
+            background-color: #f5f5f5;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="layout-box">
+        <div class="left-col">左列（浮动）</div>
+        <div class="right-col">右列（浮动）</div>
+        <div class="middle-col">中间列（不浮动，用margin留白）</div>
+    </div>
+</body>
+</html>

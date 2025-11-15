@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <style>
+        .article-box {
+            width: 600px;
+            border: 1px solid #ccc;
+            padding: 20px;
+        }
+        .article-img {
+            float: left; /* 向左浮动 */
+            width: 150px;
+            height: 100px;
+            margin-right: 15px; /* 与文字保持间距 */
+            margin-bottom: 10px;
+            object-fit: cover; /* 保持图片比例 */
+        }
+    </style>
+</head>
+<body>
+    <div class="article-box">
+        <img src="https://picsum.photos/200/150" alt="示例图片" class="article-img">
+        <p>这是浮动最经典的用法——文本环绕图片。当图片设置float: left后，会脱离正常文档流，右侧的文字会自动环绕图片排列，让图文混排更自然。这种方式常见于新闻详情页、博客文章等内容场景，无需额外清除浮动，父容器会被文字高度撑起。</p>
+        <p>继续添加文字内容，可观察到文字会一直环绕图片，直到图片下方，之后恢复正常排版。</p>
+    </div>
+</body>
+</html>

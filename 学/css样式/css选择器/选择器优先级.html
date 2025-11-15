@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <h3>全局选择器：*</h3>
+    <h3>元素选择器：标签名称</h3>
+    <h3>类选择器：class(.)</h3>
+    <h3>id选择器：id(#)</h3>
+    <h3>内联选择器(行内样式)</h3>
+    <ol>
+        <strong style="font-size:30px;">优先级<span>由下到上</span></strong>
+        <li><h3>全局选择器：*</h3></li>
+        <li><h3>元素选择器：标签名称->1</h3></li>
+        <li><h3>类选择器：class(.)->10</h3></li>
+        <li><h3>id选择器：id(#)->100</h3></li>
+        <li><h3>行内样式->1000</h3></li>
+    </ol>
+</body>
+</html>
